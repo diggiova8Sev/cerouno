@@ -1,0 +1,41 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>30</x><y>70</y><w>280</w><h>190</h></coordinates><panel_attributes>Sitio
+--
+-nombre:String
+
+--
+-tipoServicio(String): Servicio
+-obtenerHistorial(Cliente):ArrayList&lt;Peliculas&gt;
++verPelicula(String, String): Resultados</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>400</y><w>210</w><h>190</h></coordinates><panel_attributes>Cliente
+--
+-nombre:String
+-dni: String
+-int: saldoPorPagar
+--
++esDeudor(String): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>340</x><y>440</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+Resultados
+--
++CLIENTE_INEXISTENTE
++CONTENIDO_INEXISTENTE
++CLIENTE_DEUDOR
++CONTENIDO_NO_DISPONIBLE
++OK
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>510</x><y>80</y><w>210</w><h>190</h></coordinates><panel_attributes>Servicio
+--
+-tipoServicio: String
+--
++suscripcionPremium(Cliente):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>150</y><w>230</w><h>50</h></coordinates><panel_attributes>- standard
+m1=1
+lt=&lt;-</panel_attributes><additional_attributes>210;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>210</y><w>230</w><h>50</h></coordinates><panel_attributes>- premium
+m1=1
+lt=&lt;-</panel_attributes><additional_attributes>210;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>110</x><y>250</y><w>80</w><h>170</h></coordinates><panel_attributes>-clientes
+m1=*
+lt=&lt;-</panel_attributes><additional_attributes>10;150;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>260</y><w>290</w><h>260</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>270;10;10;240</additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>430</y><w>210</w><h>190</h></coordinates><panel_attributes>Pelicula
+--
+-nombre:String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>260</y><w>100</w><h>190</h></coordinates><panel_attributes>-peliculas
+m1= *
+lt=&lt;-</panel_attributes><additional_attributes>40;170;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>270</x><y>260</y><w>170</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>150;180;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>300</x><y>240</y><w>320</w><h>210</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>300;190;10;10</additional_attributes></element></diagram>
